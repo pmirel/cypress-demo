@@ -1,0 +1,17 @@
+{
+  "name": "cypress-demo-test-framework",
+  "version": "1.0.0",
+  "description": "cypress framework for testing web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Palii Mirel",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^13.6.1"
+  }
+}
