@@ -123,5 +123,13 @@ describe('example to-do app', () => {
       // Finally, make sure that the clear button no longer exists.
       cy.contains('Clear completed').should('not.exist');
     });
+    it('', () => {
+      cy.get(wevw).should('have.all.key');
+    });
   });
 });
+
+// es6 mocha snippets
+// vscode icons - in vs code settings
+//brackets color -  in vs code settings
+// cypress helper
