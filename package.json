@@ -4,32 +4,22 @@
   "description": "cypress framework for testing web app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint": "eslint cypress",
-    "eslint-fix": "eslint cypress --fix"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "cypress"
   ],
   "author": "Palii Mirel",
   "license": "MIT",
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run eslint-fix"
-    }
-  },
   "devDependencies": {
-    "cypress": "^13.6.1",
-    "eslint": "^8.56.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-chai-friendly": "^0.7.2",
-    "eslint-plugin-cypress": "^2.15.1",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-prettier": "^5.1.2",
-    "eslint-plugin-react": "^7.33.2",
-    "husky": "^8.0.3",
-    "prettier": "^3.1.1"
+    "cypress": "13.6.1",
+    "eslint": "8.56.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-chai-friendly": "0.7.2",
+    "eslint-plugin-cypress": "2.15.1",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-prettier": "5.1.2",
+    "prettier": "3.1.1"
   }
 }
