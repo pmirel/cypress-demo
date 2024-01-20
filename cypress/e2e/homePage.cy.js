@@ -1,4 +1,3 @@
-import routes from '../support/utilities/routes';
 import { HomePage } from '../pageObjects/homePage';
 
 const homePage = new HomePage();
@@ -22,9 +21,7 @@ describe('visit home page', () => {
   });
 
   it('search from home page', () => {
-    cy.get(homePage.searchBar).find(homePage.searchInput).type('iPhone');
-
-    cy.get(homePage.searchBar).find(homePage.submitButton).click();
+    homePage.searchForProduct('iPhone');
     cy.url().should('contain', 'search=iPhone');
   });
 

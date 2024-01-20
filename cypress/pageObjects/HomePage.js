@@ -13,5 +13,8 @@ export class HomePage {
   shopNowItem = '[data-id="213244"]';
   smartWatchMenuElement = '[title="Smart Watch"]';
 
-  searchForProduct() {}
+  searchForProduct(product) {
+    cy.get(this.searchBar).find(this.searchInput).type(product);
+    cy.get(this.searchBar).find(this.submitButton).click();
+  }
 }
