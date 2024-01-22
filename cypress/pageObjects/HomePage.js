@@ -7,6 +7,7 @@ export class HomePage {
   topProducts = '[id="entry_213257"]';
   searchInput = 'input[name="search"]';
   submitButton = 'button[type="submit"]';
+  searchButton = '#entry_217822 .search-button';
   sideMenuIcon = '#entry_217832 > .icon-left';
   sideMenu = '#entry_217840';
   classTitle = '.title';

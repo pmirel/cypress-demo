@@ -5,7 +5,7 @@ module.exports = defineConfig({
   video: true,
   screenshotOnRunFailure: true,
   chromeWebSecurity: false,
-  retries: 2,
+  retries: 1,
   viewportWidth: 1920,
   viewportHeight: 1080,
   e2e: {
