@@ -19,11 +19,11 @@ jobs:
         with:
           record: true
           parallel: true # Runs test in parallel using settings above
+          start: |
+            npx cypress run --record
+            echo "CYPRESS_PROJECT_ID: $CYPRESS_PROJECT_ID"
         env:
           # For recording and parallelization to work you must set your CYPRESS_RECORD_KEY
           # in GitHub repo → Settings → Secrets → Actions
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
-        run: |
-          echo "CYPRESS_PROJECT_ID: $CYPRESS_PROJECT_ID"
-          npx cypress run
