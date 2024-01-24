@@ -29,7 +29,7 @@ describe('Search for MacBook', () => {
       .parent()
       .next()
       .within((el) => {
-        console.log(el);
+        console.log('el', el);
         cy.get(searchPage.eyeButton).click({ force: true });
       });
 
