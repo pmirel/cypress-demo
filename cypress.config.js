@@ -1,7 +1,18 @@
 const { defineConfig } = require('cypress');
-const getProjectId = require('./cypress/support/utilities/environments');
 
 module.exports = defineConfig({
+  getProjectId: () => {
+    if (process.env.CYPRESS_PROJECT_ID) {
+      // Running locally, use the local environment variable
+      return process.env.CYPRESS_PROJECT_ID;
+    } else if (Cypress.env('CI')) {
+      // Running in CI, use the secrets from GitHub Actions
+      return Cypress.env('CYPRESS_PROJECT_ID');
+    } else {
+      // Default project ID if none of the above conditions are met
+      return 'default_project_id';
+    }
+  },
   // projectId: process.env.CYPRESS_PROJECT_ID || secrets.CYPRESS_PROJECT_ID || 'default_project_id',
   projectId: getProjectId(),
   defaultCommandTimeout: 10000,
