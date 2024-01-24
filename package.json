@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:cloud": "dotenv -e .env-record cypress run --record --key $CYPRESS_RECORD_KEY"
+    "cy:cloud": "dotenv -e .env cypress run -- --record",
+    "cy:open": "dotenv -e .env cypress open",
+    "cy:test": "dotenv -e .env cypress run"
   },
   "keywords": [
     "cypress"
@@ -13,8 +15,8 @@
   "author": "Palii Mirel",
   "license": "MIT",
   "devDependencies": {
-    "cypress": "^13.6.3",
-    "dotenv": "^16.4.0",
+    "cypress": "13.6.3",
+    "dotenv": "16.4.0",
     "eslint": "8.56.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-prettier": "9.1.0",
