@@ -1,5 +1,5 @@
 const { defineConfig } = require('cypress');
-import getProjectId from 'cypress/support/utilities/environments.js';
+const getProjectId = require('./cypress/support/utilities/environments');
 
 module.exports = defineConfig({
   // projectId: process.env.CYPRESS_PROJECT_ID || secrets.CYPRESS_PROJECT_ID || 'default_project_id',
