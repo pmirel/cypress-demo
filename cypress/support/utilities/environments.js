@@ -14,4 +14,4 @@ const getProjectId = () => {
   }
 };
 
-export default getProjectId;
+module.exports = getProjectId;
