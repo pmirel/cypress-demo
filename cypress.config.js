@@ -1,7 +1,8 @@
 const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
-  getProjectId: () => {
+  // projectId: process.env.CYPRESS_PROJECT_ID || secrets.CYPRESS_PROJECT_ID || 'default_project_id',
+  projectId: () => {
     if (process.env.CYPRESS_PROJECT_ID) {
       // Running locally, use the local environment variable
       return process.env.CYPRESS_PROJECT_ID;
@@ -13,8 +14,6 @@ module.exports = defineConfig({
       return 'default_project_id';
     }
   },
-  // projectId: process.env.CYPRESS_PROJECT_ID || secrets.CYPRESS_PROJECT_ID || 'default_project_id',
-  projectId: getProjectId(),
   defaultCommandTimeout: 10000,
   video: true,
   screenshotOnRunFailure: true,
