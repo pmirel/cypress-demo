@@ -1,5 +1,5 @@
 // getProjectId.js
-const { defineConfig } = require('cypress');
+const { getProjectId } = require('cypress');
 require('dotenv').config();
 
 const getProjectId = () => {
