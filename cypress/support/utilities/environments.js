@@ -2,7 +2,7 @@
 const { getProjectId } = require('cypress');
 require('dotenv').config();
 
-const getProjectId = () => {
+module.exports = getProjectId = () => {
   if (process.env.CYPRESS_PROJECT_ID) {
     // Running locally, use the local environment variable
     return process.env.CYPRESS_PROJECT_ID;
@@ -14,5 +14,3 @@ const getProjectId = () => {
     return 'default_project_id';
   }
 };
-
-module.exports = getProjectId;
