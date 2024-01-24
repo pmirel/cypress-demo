@@ -2,7 +2,7 @@ const { defineConfig } = require('cypress');
 require('dotenv').config();
 
 module.exports = defineConfig({
-  projectId: process.env.CYPRESS_PROJECT_ID || 'default_project_id',
+  projectId: process.env.CYPRESS_PROJECT_ID || secrets.CYPRESS_PROJECT_ID || 'default_project_id',
   defaultCommandTimeout: 10000,
   video: true,
   screenshotOnRunFailure: true,
