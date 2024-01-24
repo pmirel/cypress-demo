@@ -1,4 +1,4 @@
-import { HomePage } from '../pageObjects/homePage';
+import { HomePage } from '../pageObjects/HomePage.js';
 
 const homePage = new HomePage();
 describe('visit home page', () => {

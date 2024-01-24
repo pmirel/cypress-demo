@@ -1,5 +1,5 @@
-import { HomePage } from '../pageObjects/homePage';
-import { SearchPage } from '../pageObjects/SearchPage';
+import { HomePage } from '../pageObjects/HomePage.js';
+import { SearchPage } from '../pageObjects/SearchPage.js';
 
 const homePage = new HomePage();
 const searchPage = new SearchPage();
