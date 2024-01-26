@@ -2,8 +2,7 @@ const { defineConfig } = require('cypress');
 const { getProjectId } = require('./cypress/support/utilities/environments');
 
 module.exports = defineConfig({
-  // projectId: process.env.CYPRESS_PROJECT_ID || secrets.CYPRESS_PROJECT_ID || 'default_project_id',
-  projectId: getProjectId(),
+  projectId: process.env.CYPRESS_PROJECT_ID,
   defaultCommandTimeout: 10000,
   video: true,
   screenshotOnRunFailure: true,

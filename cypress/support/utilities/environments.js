@@ -1,4 +1,3 @@
-// getProjectId.js
 const getProjectId = () => {
   if (process.env.CYPRESS_PROJECT_ID) {
     // Running locally, use the local environment variable
