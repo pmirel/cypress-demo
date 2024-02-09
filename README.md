@@ -1,6 +1,6 @@
-# cypress-demo
+# Cypress-demo
 
-demo project for using cypress
+Demo project for using cypress automation test framework
 
 # Prerequisites
 
@@ -11,7 +11,7 @@ demo project for using cypress
 
 # Setup
 
-In de desired folder run
+In the desired folder run
 
 - npm init
 - npm install cypress --save-dev
@@ -24,8 +24,21 @@ In this folder create a file with the desired page name: PageName.js
 # Optional: Create a utilities folder
 
 You may need a folder to store different things that help you in the process of automating so you may need to create a separate folder.
-In support folder create anothe folder named utilities. Here you can store files with routes for the app or helper methods.
+In support folder create another folder named utilities. Here you can store files with routes for the app or helper methods.
 
 # Connection with Cypress Cloud
 
+Create an account at https://cloud.cypress.io/signup
+Create new Project
+get ProjectID
+create new Project Record key
+
+# Set env variables
+
+ProjectID and RecordKey
+
 # Github Actions
+
+Basic setup
+
+# Set up integration Github with Cloud
