@@ -1,44 +1,38 @@
-# Cypress-demo
+# Cypress Demo
 
-Demo project for using cypress automation test framework
+Read about how the project was created at [miravalo.com](https://www.miravalo.com/). You can follow the article to create your own project or follow the instruction bellow to use the cypress-demo template.
 
-# Prerequisites
+This is a demonstration project showcasing the usage of Cypress automation test framework. The project employs ESLint for code quality, with _eslint_ plugins for cypress, and _Prettier_ for code formatting.\
+The design pattern followed is the Page Object Model. Additionally, the dotenv package is utilized for securely storing sensitive information such as project Id and record key required for connecting to the Cypress cloud.
 
-- git
-- npm
-- nodejs
-- vscode
+## Prerequisites
 
-# Setup
+Before getting started, ensure you have the following dependencies installed:
 
-In the desired folder run
+- Git
+- Node.js and npm
+- Visual Studio Code (or any preferred code editor)
 
-- npm init
-- npm install cypress --save-dev
+## Installation
 
-# Create a Page Object Folder
+To set up the project, follow these steps:
 
-In cypress folder create a folder named: pageObjects
-In this folder create a file with the desired page name: PageName.js
+1. Clone the project repository.
+2. Open a terminal or command prompt in the project folder.
+3. Run `npm install` to install project dependencies.
+4. Create an account on Cypress Cloud at [Cypress Cloud](https://cloud.cypress.io/signup) and create a new project.
+5. Rename the file `.env-example` to `.env` and add your project ID and record key obtained from Cypress Cloud.
 
-# Optional: Create a utilities folder
+## Running the Tests
 
-You may need a folder to store different things that help you in the process of automating so you may need to create a separate folder.
-In support folder create another folder named utilities. Here you can store files with routes for the app or helper methods.
+To execute the tests, navigate to the project's root folder in your terminal and use the following commands:
 
-# Connection with Cypress Cloud
+- `npm run cy:test`: Runs the tests in headless mode.
+- `npm run cy:open`: Opens the Cypress App for running tests visually.
+- `npm run cy:cloud`: Runs the tests in headless mode and stores the results in Cypress Cloud.
 
-Create an account at https://cloud.cypress.io/signup
-Create new Project
-get ProjectID
-create new Project Record key
+Additionally, automation tests are triggered automatically with GitHub Actions when new code is merged into the main branch. The results of these tests are also stored in Cypress Cloud for further analysis.
 
-# Set env variables
+Feel free to explore the project!
 
-ProjectID and RecordKey
-
-# Github Actions
-
-Basic setup
-
-# Set up integration Github with Cloud
+&copy;Mirel Palii
