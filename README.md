@@ -17,11 +17,15 @@ Before getting started, ensure you have the following dependencies installed:
 
 To set up the project, follow these steps:
 
-1. Clone the project repository.
-2. Open a terminal or command prompt in the project folder.
-3. Run `npm install` to install project dependencies.
-4. Create an account on Cypress Cloud at [Cypress Cloud](https://cloud.cypress.io/signup) and create a new project.
-5. Rename the file `.env-example` to `.env` and add your project ID and record key obtained from Cypress Cloud.
+1. From the top right of the Github repository page select 'Use this template' -> 'Create a new repository'
+2. After the project is saved to you github, clone the project repository.
+3. Open a terminal or command prompt in the project folder.
+4. Run `npm install` to install project dependencies.
+5. Create an account on Cypress Cloud at [Cypress Cloud](https://cloud.cypress.io/signup) and create a new project.
+6. Rename the file `.env-example` to `.env` and add your project ID and record key obtained from Cypress Cloud.
+7. In Gthub project repository go to Setting
+8. In the left side menu go to 'Secrets and Variables' -> 'Actions'
+9. And add here 'CYPRESS_PROJECT_ID' and 'CYPRESS_RECORD_KEY' with the values from you project in Cypress Cloud
 
 ## Running the Tests
 

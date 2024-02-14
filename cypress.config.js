@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
@@ -11,8 +12,5 @@ module.exports = defineConfig({
   viewportHeight: 1080,
   e2e: {
     baseUrl: 'https://ecommerce-playground.lambdatest.io',
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
   },
 });
