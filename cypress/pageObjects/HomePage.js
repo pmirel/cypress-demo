@@ -8,7 +8,7 @@ export class HomePage {
   searchInput = 'input[name="search"]';
   submitButton = 'button[type="submit"]';
   searchButton = '#entry_217822 .search-button';
-  sideMenuIcon = '#entry_217832 > .icon-left';
+  sideMenuIcon = '#entry_217832';
   sideMenu = '#entry_217840';
   classTitle = '.title';
   shopNowItem = '[data-id="213244"]';

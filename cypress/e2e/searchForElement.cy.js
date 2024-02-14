@@ -13,23 +13,24 @@ describe('Search for MacBook', () => {
     cy.get(searchPage.productsList).first().should('contain', 'MacBook');
   });
 
-  it('set seatch filters', () => {
+  it('set search filters', () => {
     cy.get(homePage.searchButton).click();
-    cy.get(searchPage.minValue).eq(1).focus().clear().type(200, { delay: 200 });
-    cy.get(searchPage.maxValue).eq(1).focus().clear().type(1700, { delay: 200 });
+    cy.get(searchPage.minValue).eq(1).as('minValue').clear();
+    cy.get('@minValue').type(200, { delay: 200 });
+    cy.get(searchPage.maxValue).eq(1).as('maxValue').clear();
+    cy.get('@maxValue').type(1700, { delay: 200 });
     cy.get(searchPage.inputFilterSearch).eq(1).should('be.visible').type('mac');
     cy.get(searchPage.inStockCheckbox).check({ force: true });
   });
 
-  it.only('open modal with product info', () => {
+  it('open modal with product info', () => {
     cy.get(searchPage.topProductsSection).scrollIntoView();
     cy.get(searchPage.iMacProduct).as('iMacProduct').should('be.visible');
 
     cy.get('@iMacProduct')
       .parent()
       .next()
-      .within((el) => {
-        console.log('el', el);
+      .within(() => {
         cy.get(searchPage.eyeButton).click({ force: true });
       });
 
