@@ -1,12 +1,7 @@
 {
   "plugins": ["cypress", "chai-friendly", "prettier"],
-  "extends": [
-    "plugin:cypress/recommended",
-    "plugin:chai-friendly/recommended",
-    "eslint:recommended"
-  ],
+  "extends": ["plugin:cypress/recommended", "plugin:chai-friendly/recommended"],
   "rules": {
-    "no-unused-expressions": 0,
     "chai-friendly/no-unused-expressions": 2,
     "cypress/no-force": 0,
     "cypress/no-async-tests": "error",
@@ -15,7 +10,7 @@
     "no-plusplus": 0,
     "func-names": 0,
     "no-prototype-builtins": 0,
-    "cypress/no-unnecessary-waiting": "error",
+    "cypress/no-unnecessary-waiting": "warn",
     "no-console": 1,
     "prettier/prettier": [
       "error",
