@@ -1,6 +1,6 @@
 # Cypress Demo
 
-Read about how the project was created at [miravalo.com](https://www.miravalo.com/). You can follow the article to create your own project or follow the instruction bellow to use the cypress-demo template.
+Read about how the project was created at [miravalo.com](https://miravalo.com/cypress-template-with-page-object-model/). You can follow the article to create your own project or follow the instruction bellow to use the cypress-demo template.
 
 This is a demonstration project showcasing the usage of Cypress automation test framework. The project employs ESLint for code quality, with _eslint_ plugins for cypress, and _Prettier_ for code formatting.\
 The design pattern followed is the Page Object Model. Additionally, the dotenv package is utilized for securely storing sensitive information such as project Id and record key required for connecting to the Cypress cloud.
