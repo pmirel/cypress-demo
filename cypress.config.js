@@ -5,7 +5,6 @@ module.exports = defineConfig({
   defaultCommandTimeout: 10000,
   video: true,
   screenshotOnRunFailure: true,
-  chromeWebSecurity: false,
   retries: 1,
   viewportWidth: 1920,
   viewportHeight: 1080,

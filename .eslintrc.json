@@ -3,13 +3,10 @@
   "extends": ["plugin:cypress/recommended", "plugin:chai-friendly/recommended"],
   "rules": {
     "chai-friendly/no-unused-expressions": 2,
-    "cypress/no-force": 0,
+    "cypress/no-force": "warn",
     "cypress/no-async-tests": "error",
     "cypress/no-pause": "error",
     "camelcase": 1,
-    "no-plusplus": 0,
-    "func-names": 0,
-    "no-prototype-builtins": 0,
     "cypress/no-unnecessary-waiting": "warn",
     "no-console": 1,
     "prettier/prettier": [

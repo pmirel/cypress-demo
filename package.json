@@ -4,10 +4,9 @@
   "description": "cypress framework for testing web app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "cy:cloud": "dotenv -e .env cypress run -- --record",
-    "cy:open": "dotenv -e .env cypress open",
-    "cy:test": "dotenv -e .env cypress run -- --record false"
+    "cy:open": "cypress open",
+    "cy:test": "cypress run --record false"
   },
   "keywords": [
     "cypress"
